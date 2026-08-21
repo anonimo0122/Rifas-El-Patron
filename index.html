@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta property="og:title" content="🏆 Rifas El Patrón Colombia">
+<meta property="og:description" content="Tu oportunidad de participar y ganar grandes premios. 🎟️ Conoce nuestras rifas disponibles y participa hoy.">
+<meta property="og:image" content="https://raw.githubusercontent.com/anonimo0122/Rifas-El-Patron/refs/heads/main/premios.jpg?v=2">
+<meta property="og:url" content="https://anonimo0122.github.io/Rifas-El-Patron/">
+<meta property="og:type" content="website">
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>🎰 Rifa El Patrón 🇨🇴</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+rel="stylesheet">
+
+<script src="script.js" defer></script>
+
+</head>
+
+
+<body>
+
+
+<!-- FONDO ANIMADO -->
+
+<div class="particulas"></div>
+
+
+<!-- =========================
+     PORTADA
+========================= -->
+
+<header class="hero">
+
+<div class="heroLuces"></div>
+
+<div class="decoracion decoracion1">✨</div>
+
+<div class="decoracion decoracion2">💰</div>
+
+<div class="decoracion decoracion3">🎰</div>
+
+<div class="decoracion decoracion4">💎</div>
+
+
+<!-- =========================
+     NUEVO LOGO
+========================= -->
+
+<div class="logoPrincipal">
+
+<img
+src="logo_rifa_el_patron.png"
+alt="Rifa El Patrón Colombia">
+
+</div>
+
+
+<p class="subtituloHero">
+
+🇨🇴 LA GRAN RIFA DE COLOMBIA 🇨🇴
+
+</p>
+
+
+<div class="separador">
+
+✨ 💎 🎰 💎 ✨
+
+</div>
+
+
+<p class="descripcionHero">
+
+🎟️ Escoge tus números de la suerte
+
+<br>
+
+💰 Cada número cuesta <strong>$40.000 COP</strong>
+
+</p>
+
+
+<a
+href="#numeros"
+class="botonHero">
+
+🎟️ ESCOGER MIS NÚMEROS
+
+</a>
+
+
+<div class="flecha">
+
+⬇️
+
+</div>
+
+</header>
+
+<!-- TEXTO ANIMADO DEL GRAN SORTEO -->
+<div class="gran-sorteo-banner">
+
+    <div class="gran-sorteo-titulo">
+        <span>GRAN</span>
+        <span>SORTEO</span>
+    </div>
+
+    <div class="gran-sorteo-premio">
+        <span class="premio-texto">GÁNATE ESTA</span>
+        <span class="hilux-texto">TOYOTA HILUX GR 2027</span>
+        <strong>+ 15 MILLONES</strong>
+    </div>
+
+    <div class="gran-sorteo-subtitulo">
+        COMPRA TU BOLETA Y GANA CON RIFAS EL PATRÓN
+    </div>
+
+</div>
+
+<!-- =========================
+     🏆 BANNER DE PREMIOS
+========================= -->
+
+<section class="bannerPremios">
+
+<div class="bannerPremiosBrillo"></div>
+
+<img
+src="premios.jpg"
+alt="🎰 Premios Rifa El Patrón">
+
+</section>
+
+
+
+<!-- =========================
+     SECCIÓN NÚMEROS
+========================= -->
+
+<section
+class="seccionNumeros"
+id="numeros">
+
+
+<div class="tituloSeccion">
+
+<span>🎰</span>
+
+<h2>
+
+ESCOGE TU NÚMERO
+
+</h2>
+
+<span>🎰</span>
+
+</div>
+
+
+<p class="textoSeccion">
+
+✨ Selecciona uno o varios números ✨
+
+</p>
+
+
+<div class="precioNumero">
+
+💰 PRECIO POR NÚMERO:
+
+<strong>
+
+$40.000 COP
+
+</strong>
+
+</div>
+
+
+<div class="totalDisponibles">
+
+🎟️
+
+<strong>5.000</strong>
+
+NÚMEROS DISPONIBLES
+
+</div>
+
+
+<!-- =========================
+     BUSCADOR
+========================= -->
+
+<div class="buscador">
+
+<input
+type="number"
+id="buscarNumero"
+min="1"
+max="5000"
+placeholder="🔎 Buscar número...">
+
+<button
+id="btnBuscar"
+type="button">
+
+🔍
+
+</button>
+
+</div>
+
+
+<!-- =========================
+     NÚMEROS
+========================= -->
+
+<div
+id="contenedorNumeros"
+class="contenedorNumeros">
+
+</div>
+
+
+
+<!-- =========================
+     RESUMEN DE COMPRA
+========================= -->
+
+<div
+id="resumenCompra"
+class="resumenCompra">
+
+
+<div class="resumenBrillo"></div>
+
+
+<div class="resumenTitulo">
+
+🎟️ TU SELECCIÓN
+
+</div>
+
+
+<div class="resumenDatos">
+
+
+<div class="datoCompra">
+
+<span>
+
+🔢 NÚMEROS
+
+</span>
+
+<strong
+id="cantidadNumeros">
+
+0
+
+</strong>
+
+</div>
+
+
+<div class="datoCompra">
+
+<span>
+
+💰 TOTAL
+
+</span>
+
+<strong
+id="totalCompra">
+
+$0 COP
+
+</strong>
+
+</div>
+
+
+</div>
+
+
+<div
+id="listaSeleccionados"
+class="listaSeleccionados">
+
+Aún no has seleccionado números.
+
+</div>
+
+
+<button
+id="btnPagar"
+class="btnPagar"
+type="button">
+
+💳 PAGAR AHORA
+
+</button>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     MODAL DE PAGO
+========================= -->
+
+<div
+id="modalPago"
+class="modal">
+
+
+<div class="ventanaPago">
+
+
+<button
+id="cerrarPago"
+class="cerrarPago"
+type="button">
+
+✕
+
+</button>
+
+
+<div class="iconoPago">
+
+💚
+
+</div>
+
+
+<h2>
+
+REALIZA TU PAGO
+
+</h2>
+
+
+<p>
+
+Realiza el pago correspondiente a los números seleccionados.
+
+</p>
+
+
+<div class="metodoPago">
+
+
+<div class="metodoIcono">
+
+💚
+
+</div>
+
+
+<div>
+
+<span>
+
+PAGA POR
+
+</span>
+
+<strong>
+
+NEQUI
+
+</strong>
+
+<b id="numeroNequi">
+
+3178431850
+
+</b>
+
+</div>
+
+</div>
+
+
+
+<div class="totalPago">
+
+<span>
+
+TOTAL A PAGAR
+
+</span>
+
+
+<strong
+id="totalModal">
+
+$0 COP
+
+</strong>
+
+</div>
+
+
+
+<div class="numerosPago">
+
+<span>
+
+🎟️ Números seleccionados:
+
+</span>
+
+
+<div
+id="numerosModal">
+
+</div>
+
+</div>
+
+
+
+<p class="notaPago">
+
+📸 Después de realizar el pago, guarda tu comprobante.
+
+</p>
+
+
+<!-- =========================
+     WHATSAPP
+========================= -->
+
+<button
+type="button"
+id="btnWhatsApp"
+class="btnWhatsApp">
+
+📲 ENVIAR COMPROBANTE POR WHATSAPP
+
+</button>
+
+
+</div>
+
+</div>
+
+
+
+<!-- =========================
+     COMO PARTICIPAR
+========================= -->
+
+<section class="informacion">
+
+
+<h2>
+
+✨ ¿CÓMO PARTICIPAR? ✨
+
+</h2>
+
+
+<div class="pasos">
+
+
+<div class="paso">
+
+<div class="iconoPaso">
+
+1️⃣
+
+</div>
+
+<h3>
+
+ESCOGE
+
+</h3>
+
+<p>
+
+Selecciona uno o varios números de la rifa.
+
+</p>
+
+</div>
+
+
+
+<div class="paso">
+
+<div class="iconoPaso">
+
+2️⃣
+
+</div>
+
+<h3>
+
+REVISA
+
+</h3>
+
+<p>
+
+Comprueba tus números y el valor total.
+
+</p>
+
+</div>
+
+
+
+<div class="paso">
+
+<div class="iconoPaso">
+
+3️⃣
+
+</div>
+
+<h3>
+
+PAGA
+
+</h3>
+
+<p>
+
+Realiza el pago mediante Nequi.
+
+</p>
+
+</div>
+
+
+
+<div class="paso">
+
+<div class="iconoPaso">
+
+4️⃣
+
+</div>
+
+<h3>
+
+ENVÍA
+
+</h3>
+
+<p>
+
+Envía tu comprobante por WhatsApp.
+
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+
+<div class="logoFooter">
+
+🎰 RIFA EL PATRÓN 🇨🇴
+
+</div>
+
+
+<p>
+
+🎟️ 5.000 NÚMEROS • 💰 $40.000 COP CADA UNO
+
+</p>
+
+
+<p>
+
+© 2026 Rifa El Patrón
+
+</p>
+
+
+</footer>
+
+
+</body>
+
+</html>
